@@ -3,6 +3,7 @@
     /*Google fonts*/
     @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -23,12 +24,20 @@ body{
     transition: .5s ease;
 }
 .aside .logo a{
-    font-size: 38px;
+    font-size: 30px;
     position: relative;
-    padding: 0 6px 0;
+    font-weight: 700;
+    padding: 15px 20px;
     font-family: Rubik, sans-serif;
+    letter-spacing: 5px;
     color: #302e4d;
     text-decoration: none;
+}
+.aside .logo a span
+{
+    font-family: 'Clicker Script', cursive;
+    font-size: 40px;
+
 }
 .aside .logo a::before{
     content: "";
@@ -64,7 +73,9 @@ body{
     padding-right: 10px;
 }
 .aside .copyright{
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
+
 }
 .aside.move{
         left: 0;
@@ -253,7 +264,9 @@ body{
     font-size: 18px;
     margin: 0;
     padding: 5px 0;
+    font-weight: 700;
 }
+
 .home .home-content ul li{
     width: 30px;
     height: 30px;
@@ -264,6 +277,9 @@ body{
     display: inline-block;
     cursor: pointer;
     transition: all .5s ease;
+}
+.home .home-content ul li a{
+    color: #fff;
 }
 .home .home-content ul li:hover{
     transform: scale(1.1);
@@ -321,11 +337,12 @@ body{
 .about .subtitle{
     margin: 0;
     font-size: 20px;
+    
 }
 .about .description{
     font-size: 16px;
     margin-top: 10px;
-    font-weight: 400;
+    font-weight: 600;
     opacity: .8;
     color: #302e4d;
 }
@@ -341,20 +358,28 @@ body{
 }
 .about .about-info .about-info-content1 > div span,
 .about .about-info .about-info-content2 > div span{
-    font-weight: 400;
+    font-weight: 600;
     opacity: .8;
 }
 .about .about-info .btn{
     margin: 30px 10px 0 0;
-    border-radius: 18px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 40px;
+    border: none;
+    white-space: nowrap;
+    font-size: 16px;
     color: #fff;
 }
 .about .about-info .btn1{
     width: 130px;
 }
 .about .about-info .btn2{
-    width: 90px;
+    width: 110px;
+}
+.about .about-info .btn:hover
+{
+    transform: scale(1.05); 
 }
 .about .progress-section{
     margin-top: 20px;
@@ -363,8 +388,15 @@ body{
     color: #302e4d;
     font-weight: 600;
 }
+.skill
+{
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 0;
+    font-weight: 700;
+}
 .about .progress-section .prog-title span{
-    width: 76%;
+    width: 80%;
     text-align: right;
     display: inline-block;
 }
@@ -373,19 +405,44 @@ body{
     height: 7px;
 }
 .about .progress-section .progress1 .progress-bar{
-    width: 80%;
+    width: 90%;
+}
+.about .progress-section .progress1 .prog-title span{
+    width: 90%;
+    text-align: right;
+    display: inline-block;
 }
 .about .progress-section .progress2 .progress-bar{
-    width: 73%;
+    width: 70%;
+}
+.about .progress-section .progress2 .prog-title span{
+    width: 70%;
+    text-align: right;
+    display: inline-block;
 }
 .about .progress-section .progress3 .progress-bar{
-    width: 86%;
+    width: 45%;
 }
 .about .progress-section .progress3 .prog-title span{
-    width: 83%;
+    width: 40%;
+    text-align: right;
+    display: inline-block;
 }
 .about .progress-section .progress4 .progress-bar{
-    width: 64%;
+    width: 80%;
+}
+.about .progress-section .progress4 .prog-title span{
+    width: 80%;
+    text-align: right;
+    display: inline-block;
+}
+.about .progress-section .progress5 .progress-bar{
+    width: 75%;
+}
+.about .progress-section .progress5 .prog-title span{
+    width: 75%;
+    text-align: right;
+    display: inline-block;
 }
 .about .education .title{
     margin: 60px 0 20px;

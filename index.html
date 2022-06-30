@@ -605,31 +605,50 @@
         </div>
       </div>
     </div>
-    <form action="https://formsubmit.co/956a7c562989b9075f13302d968098ea" method="POST">
     <div class="row pt-3">
       <div class="col-md-6">
         <div class="input-group">
-          <input type="name" name="name"  id="name"  class="form-control" placeholder="Name*" required>
+          <input type="text" id="name" class="form-control" placeholder="Name*" aria-label="Username" aria-describedby="basic-addon1">
         </div>
       </div>
       <div class="col-md-6">
         <div class="input-group">
-          <input type="email"  name="email"  id="email" class="form-control" placeholder="Email*">
+          <input type="text" id="email" class="form-control" placeholder="Email*" aria-label="Username"
+            aria-describedby="basic-addon1">
         </div>
       </div>
       <div class="col-md-12">
         <div class="input-group">
-          <input type="subject"  name="subject"  id="subject" class="form-control" placeholder="Subject*">
+          <input type="text" id="subject" class="form-control" placeholder="Subject*" aria-label="Username"
+            aria-describedby="basic-addon1">
         </div>
       </div>
       <div class="col-md-6">
         <div class="input-group input-textarea">
-          <textarea  id="message" name="message" class="form-control" placeholder="Your Message"></textarea>
+          <textarea id="message" class="form-control" placeholder="Your Message"></textarea>
         </div>
       </div>
     </div>
-      <a type="submit" href="" class="btn">Send</a>
-    </form>
+      <a href="" class="btn">Send</a>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+								<script>
+									function sendEmail(){
+										Email.send({
+								Host : "smtp.gmail.com",
+								Username : "chiragferwani@gmail.com",
+								Password : "pifnipmgjwbfyhol",
+								To : 'chiragferwani@gmail.com',
+								From : document.getElementById("email").value,
+								Subject : "New Contact Form Enquiery",
+								Body : "Name: " + document.getElementById("name").value
+								+ "<br> Email: " + document.getElementById("email").value
+								+ "<br> Phone no: " + document.getElementById("subject").value
+								+ "<br> Message: " + document.getElementById("message").value
+								}).then(
+								message => alert("Message Sent Successfully")
+								);
+									}
+								</script>
   </section>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>

@@ -1,0 +1,55 @@
+.aside .logo a::before,
+.home .home-content .img{
+    border-top: 4px solid #1d94f5;
+    border-left: 4px solid #1d94f5;
+}
+.aside .logo a::after,
+.home .home-content .img{
+    border-bottom: 4px solid #1d94f5;
+    border-right: 4px solid #1d94f5;
+}
+
+
+
+.aside .navbar-section li.active,
+.aside .navbar-section li:hover,
+.about .subtitle span,
+.portofolio .portofolio-filter li.active,
+.portofolio .portofolio-filter li:hover,
+.portofolio .portofolio-item .porto-overlay .icon,
+.lightbox .lightbox-content .controls .item,
+.blog .blog-item .tags span,
+.contact .contact-item .icon .fa{
+    color: #1d94f5;
+}
+
+
+.home .home-content ul li,
+.about .about-title::before,
+.about .about-title::after,
+.about .about-info .btn,
+.about .progress-bar,
+.about .education .education-content .item::before,
+.about .education .education-content .item::after,
+.portofolio .portofolio-title::before,
+.portofolio .portofolio-title::after,
+.services .services-title::after,
+.services .services-title::before,
+.blog .blog-title::before,
+.blog .blog-title::after,
+.contact .contact-title::before,
+.contact .contact-title::after,
+.portofolio .portofolio-filter li:hover::after,
+.portofolio .portofolio-filter li.active::after,
+.services .services-item .icon .fa,
+.blog .blog-item .blog-date,
+.contact .btn{
+    background-color: #1d94f5;
+}
+
+.services .services-item:hover .icon .fa{
+    box-shadow: 0 0 150px 600px #1d94f5;
+}
+.contact .input-group .form-control:focus{
+    border-bottom: 1px solid #1d94f5;
+}

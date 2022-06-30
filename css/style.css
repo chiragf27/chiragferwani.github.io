@@ -693,6 +693,13 @@ body{
     height: 100%;
     background-color: rgba(0,0,0,.8);
     display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: zoom-out;
+    padding: 30px;
+  
 }
 .lightbox.show{
     display: block;
